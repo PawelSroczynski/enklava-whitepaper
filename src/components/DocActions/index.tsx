@@ -10,9 +10,13 @@ export default function DocActions({ editUrl }: DocActionsProps): JSX.Element {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      // Find the markdown content container
+      const content = document.querySelector('.markdown');
+      if (content) {
+        await navigator.clipboard.writeText(content.innerText);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
     } catch (err) {
       console.error('Failed to copy:', err);
     }
@@ -23,8 +27,8 @@ export default function DocActions({ editUrl }: DocActionsProps): JSX.Element {
       <button
         className={`${styles.actionButton} ${copied ? styles.copied : ''}`}
         onClick={handleCopy}
-        data-tooltip="Copy link"
-        aria-label="Copy link to page"
+        data-tooltip="Copy content"
+        aria-label="Copy page content"
       >
         {copied ? (
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -32,8 +36,8 @@ export default function DocActions({ editUrl }: DocActionsProps): JSX.Element {
           </svg>
         ) : (
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
           </svg>
         )}
       </button>
