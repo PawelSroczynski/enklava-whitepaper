@@ -742,16 +742,39 @@ pre code {
 
 blockquote {
   margin: 24px 0;
-  padding: 16px 20px;
-  border-left: 3px solid var(--neutral-300);
-  background: var(--neutral-50);
-  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+  padding: 20px 24px;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: linear-gradient(135deg, var(--neutral-50) 0%, rgba(48, 153, 98, 0.05) 100%);
+  border-radius: 0 12px 12px 0;
   color: var(--ifm-font-color-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-style: italic;
+  position: relative;
 }
 
+blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 4rem;
+  color: var(--ifm-color-primary);
+  opacity: 0.15;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
 
 blockquote p {
   margin: 0;
+}
+
+[data-theme='dark'] blockquote {
+  background: linear-gradient(135deg, var(--neutral-800) 0%, rgba(48, 153, 98, 0.1) 100%);
+}
+
+[data-theme='dark'] blockquote::before {
+  opacity: 0.2;
 }
 
 /* ============================================
