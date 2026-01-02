@@ -21,3 +21,7 @@ yarn-error.log*
 
 # Legacy file with restricted permissions
 WHITEPAPER.md
+
+# Local deploy scripts
+deploy.sh
+deploy.log
