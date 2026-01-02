@@ -14,7 +14,9 @@ export default function ContentWrapper(props: Props): JSX.Element {
   return (
     <div style={{ position: 'relative' }}>
       <DocActions editUrl={editUrl} />
-      <Content {...props} />
+      <div className="doc-content-with-actions">
+        <Content {...props} />
+      </div>
     </div>
   );
 }

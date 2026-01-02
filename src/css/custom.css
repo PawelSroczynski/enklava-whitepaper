@@ -1105,3 +1105,12 @@ code {
 .yarl__root {
   --yarl__color_backdrop: rgba(0, 0, 0, 0.9);
 }
+
+/* ============================================
+   DOC ACTIONS (Copy/Edit buttons)
+   ============================================ */
+
+/* Make room for action buttons in header area */
+.doc-content-with-actions .markdown h1:first-child {
+  padding-right: 80px;
+}
