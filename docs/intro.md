@@ -8,7 +8,7 @@ slug: /
 
 # The Enklava Way
 
-## The Protocol for Regenerative Living at Scale
+> The Protocol for Regenerative Living at Scale
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', marginBottom: '2rem'}}>
   <iframe
