@@ -6,9 +6,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# ENKLAVA ECOSYSTEM
+# The Enklava Way
 
-## The Operating Protocol for Regenerative Housing and Living at Scale
+## The Protocol for Regenerative Living at Scale
 
 <div style={{position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', marginBottom: '2rem'}}>
   <iframe
@@ -21,16 +21,7 @@ slug: /
   </iframe>
 </div>
 
----
-
-| | |
-|---|---|
-| **Version** | 5.0 — Master Specification |
-| **Date** | 14 December 2025 |
-| **Architect** | Paweł Sroczyński |
-| **Network** | Polygon (PoS) |
-| **Token** | EKLV (Utility) |
-| **Supply** | 10,000,000 (Fixed) |
+*v5.0 · December 2025 · Paweł Sroczyński*
 
 ---
 
