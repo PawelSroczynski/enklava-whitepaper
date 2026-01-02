@@ -12,9 +12,9 @@ export default function ContentWrapper(props: Props): JSX.Element {
   const editUrl = metadata?.editUrl;
 
   return (
-    <>
+    <div style={{ position: 'relative' }}>
       <DocActions editUrl={editUrl} />
       <Content {...props} />
-    </>
+    </div>
   );
 }
